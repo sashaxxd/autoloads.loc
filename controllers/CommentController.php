@@ -16,7 +16,7 @@ class CommentController extends CommentModel
     public function AddComment()
     {
         if (!empty($_POST['name']) && $_POST['name'] !== null) {
-            $name = trim(strip_tags($_POST['name']));
+            $name = htmlspecialchars(trim(strip_tags($_POST['name'])));
             $this->SaveComment($name);
         }
 
