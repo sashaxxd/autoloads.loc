@@ -1,22 +1,87 @@
 body {
    background-color: #FFFFFF;
    color: #000000;
-   font-family: "Roboto Light";
+   font-family: Arial;
    font-size: 13px;
    font-weight: normal;
    line-height: 1.1875;
    margin: 0;
    padding: 0;
 }
-#wb_LayoutGrid1 {
+#wb_LayoutGrid2 {
    -moz-box-sizing: border-box;
    -webkit-box-sizing: border-box;
-   background-color: #006400;
+   background-color: transparent;
    background-image: none;
    border: 0px #CCCCCC solid;
    box-sizing: border-box;
    clear: both;
    display: table;
+   position: relative;
+   table-layout: fixed;
+   text-align: center;
+   width: 100%;
+}
+#LayoutGrid2 {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 20px 15px 20px 15px;
+}
+#LayoutGrid2 .row {
+   margin-left: -15px;
+   margin-right: -15px;
+}
+#LayoutGrid2 .col-1 {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+}
+#LayoutGrid2 .col-1 {
+   float: left;
+}
+#LayoutGrid2 .col-1 {
+   background-color: transparent;
+   background-image: none;
+   text-align: left;
+   width: 100%;
+}
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after {
+   content: " ";
+   display: table;
+}
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after {
+   clear: both;
+}
+@media (max-width: 480px) {
+#LayoutGrid2 .col-1 {
+   float: none;
+   width: 100%;
+}
+}
+#wb_LayoutGrid1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px #CCCCCC solid;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   clear: both;
+   display: table;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 970px;
    position: relative;
    table-layout: fixed;
    text-align: center;
@@ -28,7 +93,7 @@ body {
    box-sizing: border-box;
    margin-left: auto;
    margin-right: auto;
-   padding: 70px 15px 70px 15px;
+   padding: 10px 15px 10px 15px;
 }
 #LayoutGrid1 .row {
    margin-left: -15px;
@@ -70,15 +135,72 @@ body {
    width: 100%;
 }
 }
+#wb_Heading1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px #FFFFFF solid;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 0px 0px 0px 0px;
+}
+#Heading1 {
+   color: #333333;
+   font-family: Arial;
+   font-size: 37px;
+   font-weight: bold;
+   margin: 0;
+   text-align: center;
+}
+#Line4 {
+   background-color: #EEEEEE;
+   border-width: 0;
+   color: #EEEEEE;
+   margin: 10px 0px 10px 0px;
+   padding: 0;
+}
+#TextArea1 {
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px #CCCCCC solid;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #555555;
+   font-family: Arial;
+   font-size: 21px;
+   font-weight: normal;
+   overflow: auto;
+   padding: 4px 4px 4px 4px;
+   resize: none;
+   text-align: left;
+}
+#Line5 {
+   background-color: #EEEEEE;
+   border-width: 0;
+   color: #EEEEEE;
+   margin: 10px 0px 10px 0px;
+   padding: 0;
+}
+#Button1 {
+   background-color: #18BC9C;
+   background-image: none;
+   border: 1px #18BC9C solid;
+   border-radius: 4px;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 19px;
+   font-weight: normal;
+}
 #wb_BulletedList1 {
    background-color: transparent;
    background-image: none;
    border: 0px #C0C0C0 solid;
 }
 #wb_BulletedList1 .bullet {
-   color: #FFFFFF;
+   color: #000000;
    float: left;
-   font-family: "Roboto Light";
+   font-family: Arial;
    font-size: 13px;
    font-style: normal;
    font-weight: normal;
