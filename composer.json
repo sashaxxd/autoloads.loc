@@ -1,0 +1,16 @@
+{
+    "name": "sashapc/autoloads.loc",
+    "authors": [
+        {
+            "name": "Sashaxxd",
+            "email": "webdizain@bk.ru"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": ""
+
+        }
+    }
+}
