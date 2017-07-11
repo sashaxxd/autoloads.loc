@@ -16,7 +16,10 @@ class CommentController extends CommentModel
     public function AddComment()
     {
         if (!empty($_POST['name']) && $_POST['name'] !== null) {
-            $name = htmlspecialchars(trim(strip_tags($_POST['name'])));
+            $name = trim(htmlspecialchars($_POST['name']));
+            if (trim($name) === "") {  //Запрет отправки одих пробелов
+                die();
+            }
             $this->SaveComment($name);
         }
 
