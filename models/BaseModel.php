@@ -13,7 +13,7 @@ use app\config\db;
 class BaseModel extends db{
 
     public  function ReturnComment(){
-    $sql = "SELECT * FROM `comment`";
+    $sql = "SELECT * FROM `comment` PIVOT ORDER BY id DESC LIMIT 10";
     $res = $this->sql($sql);
     return $res;
 }
