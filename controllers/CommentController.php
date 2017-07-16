@@ -1,15 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sashapc
- * Date: 10.07.2017
- * Time: 12:31
- */
+
 
 namespace app\controllers;
 
 
 use app\models\CommentModel;
+
+//require_once '../models/CommentModel.php';
 
 class CommentController extends CommentModel
 {
@@ -20,6 +17,7 @@ class CommentController extends CommentModel
             if (trim($name) === "") {  //Запрет отправки одих пробелов
                 die();
             }
+
             $this->SaveComment($name);
         }
 
@@ -28,8 +26,11 @@ class CommentController extends CommentModel
 
 }
 
-$object = new CommentController();
-$object->AddComment();
 
+$object = new CommentController();
+
+$object->AddComment()
+
+?>
 
 

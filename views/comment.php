@@ -1,4 +1,6 @@
 <?php
+namespace app\views;
+
 require_once __DIR__ . '/../controllers/CommentController.php';
 
 ?>
@@ -31,10 +33,22 @@ require_once __DIR__ . '/../controllers/CommentController.php';
                 <hr id="Line4" style="display:block;width:100%;height:1px;z-index:2;">
                 <textarea name="name" id="TextArea1" style="display:block;width:100%;height:100px;z-index:3;" rows="2" cols="101" spellcheck="false" placeholder="&#1057;&#1086;&#1086;&#1073;&#1097;&#1077;&#1085;&#1080;&#1077;" required></textarea>
                 <hr id="Line5" style="display:block;width:100%;height:1px;z-index:4;">
-                <input type="submit" id="Button1" name="" value="Отправить" style="display:inline-block;width:127px;height:45px;z-index:5;">
+                <input type="submit" id="Button1" name="submit" value="Отправить" style="display:inline-block;width:127px;height:45px;z-index:5;">
             </div>
         </div>
     </form>
+
+
+<!--    <form name="LayoutGrid1"  action="../controllers/CommentController.php" method="post" id="LayoutGrid1">-->
+<!--        <div class="row">-->
+<!--            <div class="col-1">-->
+<!--                <hr id="Line4" style="display:block;width:100%;height:1px;z-index:2;">-->
+<!--                <textarea name="name" id="TextArea1" style="display:block;width:100%;height:100px;z-index:3;" rows="2" cols="101" spellcheck="false" placeholder="&#1057;&#1086;&#1086;&#1073;&#1097;&#1077;&#1085;&#1080;&#1077;" required></textarea>-->
+<!--                <hr id="Line5" style="display:block;width:100%;height:1px;z-index:4;">-->
+<!--                <input type="submit" id="Button1" name="submit" value="Отправить" style="display:inline-block;width:127px;height:45px;z-index:5;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </form>-->
 </div>
 </body>
 </html>

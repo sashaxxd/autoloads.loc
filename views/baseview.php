@@ -1,5 +1,9 @@
 <?php
+namespace app\views;
+
 require_once __DIR__ . '/../controllers/BaseController.php';
+
+
 
 
 ?>
@@ -13,12 +17,14 @@ require_once __DIR__ . '/../controllers/BaseController.php';
                          <h1 id="Heading1">ЧАТ</h1>
                      </div>
                      <div id="wb_BulletedList1" style="display:inline-block;width:100%;z-index:1;">
-                       <?php  if(array_reverse ($aux )):  ?>
-                           <?php  foreach (array_reverse ($aux ) as $item): ?>
+                       <?php  if($aux):  ?>
+                           <?php  foreach ($aux as $item): ?>
+                               <?php  foreach (array_reverse ($item) as $i): ?>
                          <div>
                              <div class="bullet" style="">&bull;</div>
-                             <div class="item item0"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><?= $item;  ?></span></div>
+                             <div class="item item0"><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><?= $i;  ?></span></div>
                          </div>
+                                 <?php endforeach; ?>
                                <?php endforeach; ?>
                           <?php endif; ?>
                      </div>

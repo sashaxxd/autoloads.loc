@@ -1,13 +1,8 @@
-<?php
-namespace app\config;
-
-class config  {
-
-    var $DB_HOST = 'localhost';
-    var $DB_USER = 'root';
-    var $DB_PASSWORD = '';
-    var $BD_BASE = 'autoloads.loc';
-
-}
-
-
+<?
+return [
+    'host' => 'localhost',
+    'db_name' => 'autoloads.loc',
+    'username' => 'root',
+    'password' => '',
+    'charset' => 'utf8'
+];

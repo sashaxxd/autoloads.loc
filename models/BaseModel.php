@@ -10,12 +10,37 @@ namespace app\models;
 
 use app\config\db;
 
+
+
+//require_once '../config/db.php';
+
+//db::connect();
+
 class BaseModel extends db{
 
-    public  function ReturnComment(){
-    $sql = "SELECT * FROM `comment` PIVOT ORDER BY id DESC LIMIT 50";
-    $res = $this->sql($sql);
-    return $res;
+    public $res;
+
+    public function getMessage(){
+        $result = self::$db->query("SELECT `name` FROM `comment` ORDER BY id DESC LIMIT 50");
+        $return = array();
+        while ($message = $result->fetchAll(\PDO::FETCH_COLUMN)) {
+            $return[] = $message;
+        }
+        return $return;
+    }
+
 }
-}
+
+//$sql = new BaseModel();
+//
+//$sql = $sql->getMessage();
+//
+//print_r($sql);
+
+
+
+
+
+
+
 

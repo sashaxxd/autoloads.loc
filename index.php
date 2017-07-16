@@ -14,6 +14,8 @@
  * Подключение автозагрузчика
  */
 require_once  'vendor/autoload.php';
+use app\config\db;
+db::connect();
 /*
  * Подключение дебага
  */
@@ -22,6 +24,10 @@ require_once 'functions.php';
 //require_once 'views/testview.php';
 require_once 'views/baseview.php';
 require_once 'views/comment.php';
+
+
+
+
 ?>
 
 
